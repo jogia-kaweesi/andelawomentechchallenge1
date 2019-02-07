@@ -1,0 +1,388 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>PYTHON DOCUMENTATION</header>
+      <ul>
+        <a class="nav-link" href="#Getting_started_with_Python_Language" rel="internal"><li>Getting started with Python Language</li></a>
+        <a class="nav-link" href="#What_should_you_know_before_learning_Python " rel="internal"><li>What should you know before learning Python</li></a>
+        <a class="nav-link" href="#How_to_download_and_install_python" rel="internal"><li>How to download and install python</li></a>
+        <a class="nav-link" href="#Hello_world_in_python_using_IDLE" rel="internal"><li>Hello world in python using IDLE</li></a>
+        <a class="nav-link" href="# Creating_variables_and_assigning_values" rel="internal"><li> Creating variables and assigning values</li></a>
+        <a class="nav-link" href="#Block_Indentation" rel="internal"><li>Block Indentation</li></a>
+        <a class="nav-link" href="#Data_types" rel="internal"><li>Data types</li></a>
+        <a class="nav-link" href="#Numbers" rel="internal"><li>Numbers</li></a>
+        <a class="nav-link" href="#Strings" rel="internal"><li>Strings</li></a>
+        <a class="nav-link" href="#Built_in_constants" rel="internal"><li></li>Built in constants</a>
+        <a class="nav-link" href="#if...else_statement" rel="internal"><li>if...else statement</li></a>
+        <a class="nav-link" href="#while_statement" rel="internal"><li>while statement</li></a>
+        <a class="nav-link" href="#Function_declarations" rel="internal"><li>Function declarations</li></a>
+        <a class="nav-link" href="#Reference" rel="internal"><li>Reference</li></a>
+      </ul>
+    </nav>
+    <main id="main-doc">
+
+      <section class="main-section" id="Getting_started_with_Python_Language">
+        <header>Getting started with Python Language</header>
+        <article>
+          <p>Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. Python features a dynamic type system and automatic memory management and supports multiple programming paradigms, including object-oriented, imperative, functional programming,
+and procedural styles. It has a large and comprehensive standard library.</p>
+
+    <P>Two major versions of Python are currently in active use:</p>
+
+    <li>Python 3.x is the current version and is under active development.</li>
+    <li>Python 2.x is the legacy version and will receive only security updates until 2020. No new features will be
+implemented. Note that many projects still use Python 2, although migrating to Python 3 is getting easier.</li>
+          </artice>
+        </section>
+      <section class="main-section" id="What_should_you_know_before_learning_Python">
+        <header>What should you know before learning Python</header>
+        <article>
+          <li> Python is a dynamic-typed language; you don’t have to explicitly state that a variable is an integer number, for example. The Python interpreter will figure that out:</li>
+
+          <li>Python is interpreted, meaning it is ran “on-the-fly”. This makes it very easy to write and test programs. Many other languages are compiled to machine code before they will run; this makes them run faster than Python, but for most things you won’t notice it.</li>
+          <li>Python allows you to use procedural programming (via functions) or object-oriented programming (via classes). Some other languages make you use one or the other.</li>
+    <li>Python has built-in data structures, such as lists and dictionaries, so you don’t have to create these structures from scratch. It also handles memory management for you.</li>
+          </artice>
+        </section>
+      <section class="main-section" id="How_to_download_and_install_python">
+        <header>How to download and install python</header>
+        <article>
+        <p>You can download and install either version of Python here. See Python 3 vs. Python 2 for a comparison between them. In addition, some third-parties offer re-packaged versions of Python that add commonly used libraries and
+other features to ease setup for common use cases, such as math, data analysis or scientific use</p>
+
+    <p> To confirm that Python was installed correctly, you can verify that by running the following command in your favorite terminal (If you are using Windows OS, you need to add path of python to the environment variable before
+using it in command prompt):</p>
+
+
+         <li> $ python --version</>
+         <li>Python 3.x Version ≥ 3.0</li>
+    <p>If you have Python 3 installed, and it is your default version (see Troubleshooting for more details) you should see something like this:</p>
+    <li> $ python --version</>
+    <li>Python 3.6.0</li>
+    <li>Python 2.x Version ≤ 2.7</li>
+    <p>If you have Python 2 installed, and it is your default version (see Troubleshooting for more details) you should see something like this:</p>
+    <li>$ python --version</li>
+    <li>Python 2.7.13</li>
+    <p>If you have installed Python 3, but $ python --version outputs a Python 2 version, you also have Python 2 installed. This is often the case on MacOS, and many Linux distributions. Use $ python3 instead to explicitly use the
+Python 3 interpreter.</p>
+
+        </article>
+        </section>
+      <section class="main-section" id="Hello_world_in_python_using_IDLE">
+        <header>Hello world in python using IDLE</header>
+        <article>
+    <li>An IDLE is a simple editor for Python, that comes bundled with Python.</li>
+        <li>How to create Hello,world program in IDLE</li>
+    <p>Open IDLE on your system of choice</p>
+    <p>In older versions of Windows, it can be found at All Programs under the Windows menu.</p>
+    <p>In Windows 8+, search for IDLE or find it in the apps that are present in your system</p> 
+    <p>On Unix-based (including Mac) systems you can open it from the shell by typing $ idle
+python_file.py.</p>
+<p>It will open a shell with options along the top</p>
+
+    <code> >>></code>
+    <p>Now write the following code in the prompt:</p>
+
+    <code>>>> print("Hello, World") </code>
+        <p>Hit Enter.</p>
+        <code>>>> print("Hello, World")
+ Hello, World</code> 
+    <header>Hello World Python file</header>
+    <p>Create a new file hello.py that contains the following line:</p>
+
+    <p>Python 3.x Version ≥ 3.0</p>
+    <code>print('Hello, World')</code>
+    <p>Python 2.x Version ≥ 2.6</p>
+    <p>You can use the Python 3 print function in Python 2 with the following import statement:</p>
+    <code>from __future__ import print_function</code>
+     </article>
+        </section>
+      <section class="main-section" id=" Creating_variables_and_assigning_values">
+        <header> Creating variables and assigning values</header>
+        <p>To create a variable in Python, all you need to do is specify the variable name, and then assign a value to it.</p>
+        
+           <code> < variable name> = < value></code>
+            
+        <p>Python uses = to assign values to variables. There's no need to declare a variable in advance (or to assign a data type to it), assigning a value to a variable itself declares and initializes the variable with that value. There's no way to declare a variable without assigning it an initial value.
+         </p>
+         <code>declare a variable without assigning it an initial value.
+                # Integer
+                a = 2
+                print(a)
+                # Output: 2
+                # Integer
+                b = 9223372036854775807
+                print(b)
+                # Output: 9223372036854775807
+                # Floating point
+                pi = 3.14
+                print(pi)
+                # Output: 3.14
+                # String
+                c = 'A'
+                print(c)
+                # Output: A
+                # String
+                name = 'John Doe'
+                print(name)
+                # Output: John Doe
+                # Boolean
+                q = True
+                print(q)
+                # Output: True
+                # Empty value or null data type
+                x = None
+                print(x)
+                # Output: Noneaz</code>
+    <p>Variable assignment works from left to right. So the following will give you an syntax error.</p>
+    <code>0 = x
+ => Output: SyntaxError: can't assign to literal </code>
+ <p>You can not use python's keywords as a valid variable name. You can see the list of keyword by</p>
+ <code>import keyword
+print(keyword.kwlist) </code>
+<header>Rules for variable naming:</header>
+<p>1. Variables names must start with a letter or an underscore.</p>
+<code>x = True # valid
+_y = True # valid
+9x = False # starts with numeral
+=> SyntaxError: invalid syntax
+ $y = False # starts with symbol
+=> SyntaxError: invalid syntax</code>
+<p>2. The remainder of your variable name may consist of letters, numbers and underscores.</p>
+<code>has_0_in_it = "Still Valid"</code>
+<p>3. Names are case sensitive.</p>
+<code>x = 9
+y = X*5
+=>NameError: name 'X' is not defined
+  </code>
+  <p>Even though there's no need to specify a data type when declaring a variable in Python, while allocating the
+    necessary area in memory for the variable, the Python interpreter automatically picks the most suitable built-in
+    type for it:</p>
+    <code>a, b, c = 1, 2, 3
+      print(a, b, c)
+      # Output: 1 2 3
+      a, b, c = 1, 2
+      => Traceback (most recent call last):
+      => File "name.py", line N, in <module>
+      => a, b, c = 1, 2
+      => ValueError: need more than 2 values to unpack
+      a, b = 1, 2, 3
+      => Traceback (most recent call last):
+      => File "name.py", line N, in <module>
+      => a, b = 1, 2, 3
+      => ValueError: too many values to unpack</code>
+
+
+        </section>
+      <section class="main-section" id="Block_Indentation">
+        <header>Block Indentation</header>
+        <article>
+    
+          <p>Python uses indentation to define control and loop constructs. This contributes to Python's readability, however, it
+            requires the programmer to pay close attention to the use of whitespace. Thus, editor miscalibration could result in
+            code that behaves in unexpected ways</p>
+          <p>Python uses the colon symbol (:) and indentation for showing where blocks of code begin and end (If you come
+            from another language, do not confuse this with somehow being related to the ternary operator). That is, blocks in
+            Python, such as functions, loops, if clauses and other constructs, have no ending identifiers. All blocks start with a
+            colon and then contain the indented lines below it</p>
+
+          <p>For example:</p>
+          <code>def my_function(): # This is a function definition. Note the colon (:)
+        a = 2             # This line belongs to the function because it's indented
+        return a          # This line also belongs to the same function
+        print(my_function()) # This line is OUTSIDE the function block
+        or
+        if a > b:          # If block starts here
+        print(a)           # This is part of the if block
+        else:              # else must be at the same level as if
+        print(b)           # This line is part of the else block</code>
+        <p>Blocks that contain exactly one single-line statement may be put on the same line, though this form is generally not considered good style:
+          </p>
+        <code>if a > b: print(a)
+  else: print(b) </code>
+  <p>Attempting to do this with more than a single statement will not work</p>
+  <code>if x > y: y = x
+  print(y) # IndentationError: unexpected indent
+  if x > y: while y != z: y -= 1 # SyntaxError: invalid syntax
+   </code>
+   <p>An empty block causes an IndentationError. Use pass (a command that does nothing) when you have a block with
+    no content:</p>
+    <code>def will_be_implemented_later():
+  pass</code>
+        </article>
+        </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          
+
+         <header>Built-in-Types</header>
+
+         <header>Booleans</header>
+     Data types are nothing but variables you use to reserve some space in memory. Python variables do not need an
+explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a
+variable.
+    <p>bool: A boolean value of either True or False. Logical operations like and, or, not can be performed on booleans.</p>
+     <code>x or y # if x is False then y otherwise x
+  x and y # if x is False then x otherwise y
+  not x # if x is True then False, otherwise True</code>
+          <p><In Python 2.x and in Python 3.x, a boolean is also an int. The bool type is a subclass of the int type and True and
+            False are its only instances:/p>
+
+    <code>  issubclass(bool, int) # True
+  isinstance(True, bool) # True
+  isinstance(False, bool) # True</code>
+  <p>If boolean values are used in arithmetic operations, their integer values (1 and 0 for True and False) will be used to
+  return an integer result:></p>
+<code>True + False == 1 # 1 + 0 == 1
+True * True == 1 # 1 * 1 == 1</code>
+
+        </article>
+        </section>
+      <sectiSon class="main-section" id="Numbers">
+        <header>Numbers</header>
+        <article>
+          <li>int: Integer number</li> 
+   <code>a = 2
+  b = 100
+  c = 123456789
+  d = 38563846326424324
+      </code>
+      <p>Integers in Python are of arbitrary sizes.</p>
+<p>Note: in older versions of Python, a long type was available and this was distinct from int. The two have
+  been unified.</p>
+  <li>float: Floating point number; precision depends on the implementation and system architecture, for
+   CPython the float datatype corresponds to a C double.</li>
+   <code>a = 2.0
+  b = 100.e0
+  c = 123456789.e1
+      </code>
+      <li>complex: Complex numbers</li>
+      <code>a = 2 + 1j
+   b = 100 + 10j
+          </code>
+    <li>>The <, <=, > and >= operators will raise a TypeError exception when any operand is a complex number.</li>
+    </article>
+        </section>
+      <section class="main-section" id="Strings">
+        <header>Strings</header>
+        <article>
+    <p>Python 3.x Version ≥ 3.0</p>
+    <li>str: a unicode string. The type of 'hello'</li>
+    <li>bytes: a byte string. The type of b'hello'</li>
+    <p>Python 2.x Version ≤ 2.7 </p>
+    <li>str: a byte string. The type of 'hello'</li>
+    <li>bytes: synonym for str</li>
+    <li>unicode: a unicode string. The type of u'hello</li>
+
+        </article>
+        </section>
+      <section class="main-section" id="Built_in_constants">
+        <header>Built in constants</header>
+        <article>
+        <p>In conjunction with the built-in datatypes there are a small number of built-in constants in the built-in namespace:</p>
+        <li>True: The true value of the built-in type bool</li>
+        <li>False: The false value of the built-in type bool</li>
+        <li>None: A singleton object used to signal that a value is absent.</li>
+        <li>Ellipsis or ...: used in core Python3+ anywhere and limited usage in Python2.7+ as part of array notation.
+        numpy and related packages use this as a 'include everything' reference in arrays.</li>
+        <li>Not Implemented: a singleton used to indicate to Python that a special method doesn't support the specific
+        arguments, and Python will try alternatives if available.</li>
+        <code>a = None # No value will be assigned. Any valid datatype can be assigned later</code>
+        <p>Python 3.x Version ≥ 3.0</p>
+     <p>None doesn't have any natural ordering. Using ordering comparison operators (<, <=, >=, >) isn't supported anymore
+     and will raise a TypeError.</p>
+    <p>Python 2.x Version ≤ 2.7</p>
+   <p>None is always less than any number (None < -32 evaluates to True).</p>
+        </article>
+        </section>
+      <section class="main-section" id="if...else_statement">
+        <header>if...else statement</header>
+        <article>
+    <li>if statement</li>
+    <code>if condition:
+      body
+     </code>
+     The if statements checks the condition. If it evaluates to True, it executes the body of the if statement. If it
+aluates to False, it skips the body.
+<code>if True:
+  print "It is true!"
+ >> It is true!
+ if False:
+  print "This won't get printed.."
+ The condition can be any valid expression:
+ if 2 + 2 == 4:
+  print "I know math!"
+ >> I know math!</code>
+<p>The condition can be any valid expression:</p>
+    
+    <code>if 2 + 2 == 4:
+    print "I know math!"
+     >> I know math!</code>
+     <li>: Else statement</li>
+<code>if condition:
+  body
+   else:
+  body</code>
+  The else statement will execute it's body only if preceding conditional statements all evaluate to False.
+    <code>if True:
+      print "It is true!"
+     else:
+      print "This won't get printed.."
+     # Output: It is true!
+     if False:
+      print "This won't get printed.."
+     else:
+      print "It is false!"
+     # Output: It is false!</code>
+  
+        </article>
+        </section>
+      <section class="main-section" id="while_statement">
+        <header>While Loop</header>
+        <article>
+      With the while loop we can execute a set of statements as long as a condition is true.
+      <header>Example</header>
+<p>Print i as long as i is less than 6:</p>
+         
+          <code>i = 1
+        while i < 6:
+        print(i)
+        i += 1</code>
+            Note: remember to increment i, or else the loop will continue forever.
+            <p>The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</p>
+    
+        </article>
+        </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function declarations</header>
+        <article>
+          User-defined functions are reusable code blocks; they only need to be written once, then they can be used multiple times. They can even be used in other applications, too.
+
+          <li>Default arguments:</li>
+<p>Python has a different way of representing syntax and default values for function arguments. Default values indicate that the function argument will take that value if no argument value is passed during function call. The default value is assigned by using assignment (=) operator. Below is a typical syntax for default argument. Here, msg parameter has a default value Hello!.</p>
+<p>Function definition</p>
+    <code>def defaultArg( name, msg = "Hello!"):</code>
+    <p>Function call</p>
+        <code>defaultArg( name)</code>
+
+    </article>
+        </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <li>All the documentation in this page is taken from <a href="PythonNotesForProfessionals.pdf," target="_blank">PythonNotesForProfessionals.pdf</a>
+        </article>
+        </section>
+    </main>
+
+  </body>
